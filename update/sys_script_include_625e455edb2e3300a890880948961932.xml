@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_323515_hotel_man.dateValidation</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>dateValidation</name>
+        <script><![CDATA[function dateValidation(current){
+	var nowDate = new GlideDate();
+	var fromDate = new GlideDateTime(current.u_from);
+	var toDate = new GlideDateTime(current.u_to);
+	
+	
+	if(fromDate.before(nowDate)  || toDate.before(fromDate)){
+		gs.addErrorMessage("Please enter a valid date");
+		current.setAbortAction(true);
+	}
+	if(fromDate.after(toDate)){
+		gs.addErrorMessage("Please enter a valid date");
+		current.setAbortAction(true);
+	}
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-12 03:03:22</sys_created_on>
+        <sys_id>625e455edb2e3300a890880948961932</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>dateValidation</sys_name>
+        <sys_package display_value="hotel management" source="x_323515_hotel_man">e6aa9d8edba23300a8908809489619aa</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="hotel management">e6aa9d8edba23300a8908809489619aa</sys_scope>
+        <sys_update_name>sys_script_include_625e455edb2e3300a890880948961932</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-12 06:11:19</sys_updated_on>
+    </sys_script_include>
+</record_update>

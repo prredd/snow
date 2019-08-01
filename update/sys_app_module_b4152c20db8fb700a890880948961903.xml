@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Self-Service">08771d0cc0a8016401f604303b94b999</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>rooms</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_323515_hotel_man_room_bookings</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query>caller_id=javascript:gs.getUserID()^active=true</query>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-31 09:55:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b4152c20db8fb700a890880948961903</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>rooms</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="hotel management" source="x_323515_hotel_man">e6aa9d8edba23300a8908809489619aa</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="hotel management">e6aa9d8edba23300a8908809489619aa</sys_scope>
+        <sys_update_name>sys_app_module_b4152c20db8fb700a890880948961903</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-31 10:11:14</sys_updated_on>
+        <timeline_page/>
+        <title>rooms</title>
+        <uncancelable>false</uncancelable>
+        <view_name>roombooking</view_name>
+        <window_name/>
+    </sys_app_module>
+</record_update>

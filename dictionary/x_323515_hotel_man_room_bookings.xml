@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="room bookings" max_length="40" name="x_323515_hotel_man_room_bookings" sizeclass="24" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="type" mandatory="true" max_length="40" name="type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="king" sequence="0" value="king"/>
+                <element inactive_on_update="false" label="premium" sequence="1" value="premium"/>
+                <element inactive_on_update="false" label="platinum" sequence="2" value="platinum"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="From" max_length="40" name="u_from" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Hotel" max_length="40" name="u_hotel" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Marriot" sequence="0" value="marriot"/>
+                <element inactive_on_update="false" label="radisson" sequence="1" value="radisson"/>
+                <element inactive_on_update="false" label="hyatt" sequence="2" value="hyatt"/>
+            </choice>
+        </element>
+        <element label="location" max_length="32" name="u_location" reference="core_country" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="To" max_length="40" name="u_to" type="glide_date"/>
+        <element label="name" mandatory="true" max_length="32" name="u_user" reference="sys_user" type="reference"/>
+    </element>
+</database>

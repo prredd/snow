@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_323515_hotel_man.typeFilter</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>typeFilter</name>
+        <script><![CDATA[var typeFilter = Class.create();
+typeFilter.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+   filterType : function(){
+	 var hArr = [];
+	   var gr = new GlideRecord('x_323515_hotel_man_room_bookings');
+	   gr.query();
+	   while(gr.next()){
+		   hArr.push(gr.number.toString());
+	   }
+	   return hArr;
+   },
+	
+    type: 'typeFilter'
+
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-07-14 02:57:27</sys_created_on>
+        <sys_id>e03f17f2db66b300a890880948961923</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>typeFilter</sys_name>
+        <sys_package display_value="hotel management" source="x_323515_hotel_man">e6aa9d8edba23300a8908809489619aa</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="hotel management">e6aa9d8edba23300a8908809489619aa</sys_scope>
+        <sys_update_name>sys_script_include_e03f17f2db66b300a890880948961923</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-14 02:57:27</sys_updated_on>
+    </sys_script_include>
+</record_update>
